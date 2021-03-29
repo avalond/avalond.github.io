@@ -39,6 +39,28 @@
   </entry>
   
   <entry>
+    <title>graphql</title>
+    <link href="http://yoursite.com/2021/03/29/graphql/"/>
+    <id>http://yoursite.com/2021/03/29/graphql/</id>
+    <published>2021-03-28T16:00:00.000Z</published>
+    <updated>2021-03-29T01:41:59.696Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Graphql"><a href="#Graphql" class="headerlink" title="Graphql"></a>Graphql</h2>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Graphql&quot;&gt;&lt;a href=&quot;#Graphql&quot; class=&quot;headerlink&quot; title=&quot;Graphql&quot;&gt;&lt;/a&gt;Graphql&lt;/h2&gt;</summary>
+      
+    
+    
+    
+    <category term="Microservice" scheme="http://yoursite.com/categories/Microservice/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Docker 常用命令</title>
     <link href="http://yoursite.com/2017/12/28/docker_commend/"/>
     <id>http://yoursite.com/2017/12/28/docker_commend/</id>
@@ -451,28 +473,6 @@
     
     
     <category term="Android" scheme="http://yoursite.com/categories/Android/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Node forver 安装小记</title>
-    <link href="http://yoursite.com/2015/11/22/node-forever/"/>
-    <id>http://yoursite.com/2015/11/22/node-forever/</id>
-    <published>2015-11-21T16:00:00.000Z</published>
-    <updated>2021-03-29T01:19:23.987Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="ubuntu-全局安装forver-如下"><a href="#ubuntu-全局安装forver-如下" class="headerlink" title="ubuntu 全局安装forver 如下"></a>ubuntu 全局安装forver 如下</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install forever -g</span><br></pre></td></tr></table></figure><p>这样就给ubuntu 全局安装了一个node的forver模块</p><h2 id="启动forever"><a href="#启动forever" class="headerlink" title="启动forever"></a>启动forever</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ forever start -a app.js</span><br></pre></td></tr></table></figure><p>正确启动服务之后的信息  </p><p>warn:    –minUptime not set. Defaulting to: 1000ms<br>warn:    –spinSleepTime not set. Your script will exit if it does not stay up for at least 1000ms<br>info:    Forever processing file: app.js  </p><h2 id="停止服务器"><a href="#停止服务器" class="headerlink" title="停止服务器"></a>停止服务器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ forever stop app.js</span><br></pre></td></tr></table></figure><hr><h2 id="开发和生产的启动配置"><a href="#开发和生产的启动配置" class="headerlink" title="开发和生产的启动配置"></a>开发和生产的启动配置</h2><p>开发环境   </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /home/nodejs/nodejs-project</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ forever -p . -l ./logs/access.log -e ./logs/error.log -a -w start app.js  </span><br></pre></td></tr></table></figure><p>生产环境</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> LOG=/var/<span class="built_in">log</span>/nodejs/project</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> PID=/var/<span class="built_in">log</span>/nodejs/project/forever.pid</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> APP_PATH=/home/nodejs/nodejs-project</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">export</span> APP=<span class="variable">$APP_PATH</span>/app.js</span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ forever -p <span class="variable">$APP_PATH</span> -l <span class="variable">$LOG</span>/access.log -e <span class="variable">$LOG</span>/error.log -o <span class="variable">$LOG</span>/out.log -a --pidFile <span class="variable">$PID</span> start <span class="variable">$APP</span></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;ubuntu-全局安装forver-如下&quot;&gt;&lt;a href=&quot;#ubuntu-全局安装forver-如下&quot; class=&quot;headerlink&quot; title=&quot;ubuntu 全局安装forver 如下&quot;&gt;&lt;/a&gt;ubuntu 全局安装forver 如下&lt;/h2&gt;&lt;</summary>
-      
-    
-    
-    
-    <category term="node.js" scheme="http://yoursite.com/categories/node-js/"/>
     
     
   </entry>
